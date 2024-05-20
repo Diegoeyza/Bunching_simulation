@@ -1,6 +1,7 @@
-#include<iostream>
-#include<string>
+#include <iostream>
 #include <vector>
+#include <algorithm>
+#include <cmath>
 using namespace std;
 
 
@@ -10,6 +11,7 @@ class Bus {
     int stop_time=-1;
 public:
     int id;
+    int p_time=-1;
     int distance=0;
     void step();
     int pnumber();
@@ -19,6 +21,9 @@ public:
 	void arrival(int time);
     void load(int stop);
     void depart(int time);
+    void passenger_entering(int time);
+    bool check_passengers(int stop);
+    void dropoff(int stop);
 };
 
 int random_25(int stop);

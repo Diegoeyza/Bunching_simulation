@@ -5,6 +5,13 @@ using namespace std;
 #include"paradas.h"
 #define TIME 100
 
+/* //Donde esta la pos de los buses
+int bunching_coeff(){
+    long Q;
+    long S;
+    for (int i=1;i<4;i++);
+}*/
+
 int main(){
     srand(time(0));
     Stop stops[25];

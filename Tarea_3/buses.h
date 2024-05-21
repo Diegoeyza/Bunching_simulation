@@ -13,7 +13,6 @@ public:
     int id;
     int p_time=-1;
     int distance=0;
-    void step();
     int pnumber();
     bool stationary=false;
     bool departing=false;

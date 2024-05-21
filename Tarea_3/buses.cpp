@@ -5,10 +5,6 @@ int Bus::pnumber(){
     return static_cast<int>(passengers.size());
 }
 
-void Bus::step(){
-    distance+=5;
-}
-
 void Bus::arrival(int time){
     if (stop_time==-1) {stop_time=time; stationary=true; moving=false;}
     else if (time-stop_time==5) {stop_time=-1; stationary=false;}
@@ -24,11 +20,11 @@ void Bus::passenger_entering(int time){
     else if (time-p_time==1) {p_time=-1;}
 }
 
-void Bus::load(int stop){
+void Bus::load(int stop){               //agrego el destino del pasajero y lo guardo, este no va a poder ser la parada actual
         passengers.emplace_back(random_25(stop));
 }
 
-bool Bus::check_passengers(int stop){
+bool Bus::check_passengers(int stop){               //reviso si esque algún pasajero se quiere bajar en la parada actual
     for (int i=0; i<static_cast<int>(passengers.size());i++){
         if (passengers[i]==stop) return true;
     }

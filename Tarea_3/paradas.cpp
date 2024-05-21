@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cstdlib>
 #include "paradas.h"
 using namespace std;

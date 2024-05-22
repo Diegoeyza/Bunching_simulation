@@ -1,7 +1,7 @@
 CC=g++
 EXE=programa
 FLAGS=-std=c++11 -Wextra -Wuninitialized -Winit-self -Werror -Wundef -Wall
-MAIN=main.cpp	#Hora_punta.cpp		main.cpp
+MAIN=main.cpp		#Hora_punta.cpp		main.cpp
 FILE1=buses.o
 FILE2=paradas.o
 

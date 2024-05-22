@@ -1,5 +1,5 @@
 CC=g++
-EXE=programa
+EXE=tarea_3
 FLAGS=-std=c++11 -Wextra -Wuninitialized -Winit-self -Werror -Wundef -Wall
 MAIN=main.cpp		#Hora_punta.cpp		main.cpp
 FILE1=buses.o
